@@ -1,0 +1,572 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Outfit, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 25px 30px;
+  position: relative;
+  /* or fixed/sticky if needed */
+  z-index: 10;
+
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  transition: 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  /* transition: 0.4s ease-in-out */
+}
+
+.arrow1,
+.arrow2 {
+  background-color: white;
+  border-radius: 2rem;
+  padding: .6rem;
+  display: flex;
+
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #04025f;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: #2CD52B;
+}
+
+span {
+  color: #2CD52B;
+}
+
+.logo {
+  color: #04025f;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 2rem;
+  font-family: Outfit, sans-serif;
+}
+
+.btn,
+.btns {
+  padding: 10px 35px;
+  background-color: #2CD52B;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: .6rem;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-left: 5rem;
+}
+
+.offer {
+  color: #04025f;
+  background-color: #e0fde0;
+  width: 50%;
+  border-radius: 2rem;
+  font-size: 15px;
+  padding: 10px 19px;
+  animation: slideY 15s infinite;
+  display: flex;
+  flex-direction: column;
+}
+
+.typewriter {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.3em;
+  color: #0A2640;
+}
+
+.text-brand {
+  font-size: 5rem;
+  line-height: 6rem;
+  color: var(--color);
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-brand {
+  font-size: 5rem;
+  line-height: 6rem;
+  text-align: center;
+  animation: colorCycle 6s infinite; 
+}
+
+
+@keyframes colorCycle {
+   0% { color: red; }
+   33% { color: green; }
+   66% { color: purple; }
+   100% { color: red; }
+  }
+  
+
+/* Y-axis sliding animation */
+@keyframes slideY {
+  0% {
+    transform: translateY(0%);
+  }
+
+  33.33% {
+    transform: translateY(-100%);
+  }
+}
+
+
+.save {
+  font-size: 20px;
+  margin-top: 1rem;
+}
+
+.btz {
+  padding: 10px 35px;
+  background-color: #2CD52B;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: .6rem;
+  margin-top: 2rem;
+}
+
+.blob {
+  margin-top: 2rem;
+}
+
+.img-right-side {
+  margin-right: 4rem;
+}
+
+.text {
+  color: rgb(113, 113, 113);
+}
+
+.girl {
+  margin-top: -30rem;
+}
+
+.card {
+  background-color: rgb(230, 228, 228);
+  box-shadow: 0 4px 6px rgba(28, 25, 25, 0.1);
+  border-radius: 1rem;
+  padding: .7rem;
+  max-width: 500;
+  width: 30%;
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  justify-content: center;
+  margin-top: -1rem;
+  margin-left: 3rem;
+}
+
+.heading {
+  color: #0A2640;
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  font-family: Outfit, sans-serif;
+  margin-top: 3rem;
+}
+
+.trending-product {
+  margin-top: 6rem;
+  padding: 1rem;
+  text-align: center;
+
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.cards img {
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.cards img:hover {
+  transform: scale(1.05);
+}
+
+.deal {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.deal-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.badge {
+  background-color: #22c55e;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.badge small {
+  display: block;
+  font-size: 0.75rem;
+}
+
+.deal-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.cardPage {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  width: 550px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card-img {
+  position: relative;
+  width: 50%;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sale-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #22c55e;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+}
+
+.card-info {
+  padding: 1rem;
+  width: 50%;
+}
+
+.card-info h3 {
+  margin-bottom: 0.5rem;
+  color: #14213d;
+  font-family: Outfit, sans-serif;
+
+}
+
+.card-info .price {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.green-tick {
+  line-height: 2rem;
+  font-size: 15px;
+  font-family: Outfit, sans-serif;
+  color: #0A2640;
+}
+
+.card-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.card-info li::before {
+  content: "✔";
+  color: #22c55e;
+  margin-right: 0.5rem;
+}
+
+.buy-btn {
+  background-color: #e5e7eb;
+  padding: 15px 44px;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: #184363;
+  font-size: 14px;
+}
+
+.card-grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.medical-banner {
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.medical-card {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.banner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card-content {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #fff;
+}
+
+.product-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  /* gray-900 */
+  margin-bottom: 10px;
+}
+
+.buy-btn {
+  background-color: #1f2937;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+  background-color: #111827;
+  /* gray-900 */
+}
+
+.delivery {
+  padding: 60px 20px;
+  background-color: #fefefe;
+  display: flex;
+  justify-content: center;
+}
+
+.delivery-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  gap: 20px;
+}
+
+
+.gif {
+  margin-left: -57rem;
+  margin-top: 3rem;
+
+}
+
+.deliver-content .text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+  /* dark gray */
+  line-height: 1.4;
+}
+
+.text-brand-red {
+  color: #dc2626;
+  /* Tailwind's red-600 */
+}
+
+.testionmal {
+  background-color: #B1F9C6;
+  width: 1440px;
+  height: 782px;
+  padding: 30px 20px;
+}
+
+.head {
+  font-size: 48px;
+  font-family: Outfit, sans-serif;
+  font-weight: 100;
+  line-height: 72px;
+  width: 736.46px;
+  margin-left: 5rem;
+  margin-top: 3rem;
+  color: #184363;
+}
+
+
+.gradient-bg {
+  background: linear-gradient(90deg, #86EFAC 0%, #ffffff 50%, #86EFAC 100%);
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .mobile-only {
+    display: block;
+    padding-bottom: 2rem;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .logo {
+    font-size: 20px;
+    margin-left: 0px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: white;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+    padding-left: 2rem;
+    transition: 0.4s ease-in-out;
+  }
+
+  .nav-links.active {
+    max-height: 500px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #04025f;
+  }
+
+  .offer {
+    font-size: 15px;
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem
+  }
+
+  .typewriter,
+  .text-brand {
+    font-size: 2rem;
+  }
+
+  .blob {
+    margin-top: 4rem;
+  }
+
+  .girl {
+    margin-top: -20rem;
+  }
+
+  .card {
+    width: 79%;
+    display: flex;
+    margin-top: -3rem;
+    justify-content: center;
+    margin-left: 2rem;
+  }
+
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .cards img {
+    width: 120%;
+    max-width: 130px;
+
+  }
+
+
+
+}
